@@ -187,8 +187,8 @@ function endSelection(e) {
     chrome.runtime.sendMessage({
       action: "captureAndEdit",
       rect: {
-        x: rect.left,
-        y: rect.top,
+        x: rect.left + window.scrollX,
+        y: rect.top + window.scrollY,
         width: rect.width,
         height: rect.height
       }
