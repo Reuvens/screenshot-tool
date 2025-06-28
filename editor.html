@@ -5,7 +5,18 @@
   <link rel="stylesheet" href="editor.css">
 </head>
 <body>
+  <div id="toolbar">
+      <button id="rectTool">Rectangle</button>
+      <button id="circleTool">Circle/Ellipse</button>
+      <button id="penTool">Pen</button>
+      <button id="blurTool">Blur/Obfuscate</button>
+      <div class="spacer"></div>
+      <button id="downloadBtn">Download</button>
+      <button id="copyBtn">Copy to Clipboard</button>
+      <button id="driveLinkBtn" disabled>Get Drive Link</button>
+    </div>
   <canvas id="editorCanvas"></canvas>
   <script src="editor.js"></script>
+  <div id="confirmationMessage" class="hidden">Copied!</div>
 </body>
 </html>
