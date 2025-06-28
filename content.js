@@ -182,6 +182,17 @@ function endSelection(e) {
       width: rect.width,
       height: rect.height
     });
+
+    // Capture the visible tab and send the image data to the background script
+    chrome.runtime.sendMessage({
+      action: "captureAndEdit",
+      rect: {
+        x: rect.left,
+        y: rect.top,
+        width: rect.width,
+        height: rect.height
+      }
+    });
   }
   cleanupCapture(); // Clean up after selection is done
 }
