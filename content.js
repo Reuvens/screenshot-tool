@@ -1,0 +1,1 @@
+console.log("Screenshot Capture Pro content script injected!");
